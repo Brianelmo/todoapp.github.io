@@ -1,12 +1,12 @@
-import React, { useState, useEffect, useContext } from "react";
-import { TaskContext } from "../context/TaskContext";
+import React, { useState, useContext } from "react";
+import { TaskContext } from "../context/TaskContext"; 
 
 function TaskForm({ createTask }) {
   const [title, setTitle] = useState("");
 
   useContext(TaskContext);
 
-  function handleSubmit(e , value) {
+  function handleSubmit(e) {
     e.preventDefault();
     createTask({
       title,
@@ -29,7 +29,7 @@ function TaskForm({ createTask }) {
         autoFocus 
         className="bg-slate-300 p-3 w-full rounded-l max-md:rounded-none outline-none" 
       />
-      <button className="bg-red-500 px-1 text-white rounded-r-lg max-md:rounded-none max-md:w-full py-1">Guardar</button>
+      <button className="bg-red-500 px-1 text-white rounded-r-lg max-md:rounded-none max-md:w-full py-1 max-md:mt-2 ">Guardar</button>
     </form>
     </div>
   );
