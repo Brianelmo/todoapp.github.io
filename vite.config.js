@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()], 
-  base : 'https://Brianelmo/todoapp.github.io'  
+  base : 'https://brianelmo.github.io/todoapp.github.io/'  
 })
